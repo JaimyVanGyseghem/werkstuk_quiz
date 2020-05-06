@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl-be" dir="ltr" prefix="og:http://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Home | Web Programming 2 | Artevelde University College Ghent</title>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Web Programming 2">
+</head>
+
+<body>
+    <div id="app">
+        <div class="nav">
+            <a href="/" data-navigo>voorkeuren</a>
+            <a href="/quiz" data-navigo>quiz</a>
+            <a href="/topscore" data-navigo>topscore</a>
+        </div>
+        <div id="timer"></div>
+        <h2 id="currentQuestion"></h2>
+        <h1 id="question"></h1>
+        <h2 id='error'>Please select an answer</h2>
+        <ul class="awnsers"></ul>
+        <footer>Made by Jaimy Van Gyseghem</footer>
+    </div>
+    <div id="voorkeuren">
+        <div class="nav">
+            <a href="/" data-navigo>voorkeuren</a>
+            <a href="/quiz" data-navigo>quiz</a>
+            <a href="/topscore" data-navigo>topscore</a>
+        </div>
+        <div id="chooseQuiz">
+            <div id="diff">
+                <label for="options" >Choose a difficulty:</label>
+                <select id="options">
+                    <option value="all">all</option>
+                    <option value="easy">easy</option>
+                    <option value="medium">medium</option>
+                    <option value="hard">hard</option>
+                </select>
+                <label for="options-category" >Choose a category:</label>
+                <select id="options-category">
+                </select>
+                <button id="optionsbtn"> Click to confirm </button>
+            </div>
+        </div>
+        <footer>Made by Jaimy Van Gyseghem</footer>
+    </div>
+    <div id="showMyScores">
+        <div class="nav">
+            <a href="/" data-navigo>voorkeuren</a>
+            <a href="/quiz" data-navigo>quiz</a>
+            <a href="/topscore" data-navigo>topscore</a>
+        </div>
+        <p id="myScoreHere"></p>
+        <footer>Made by Jaimy Van Gyseghem</footer>
+    </div>
+    <p id="points"></p>
+    <footer>Made by Jaimy Van Gyseghem</footer>
+</body>
+
+</html>

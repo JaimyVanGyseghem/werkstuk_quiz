@@ -1,0 +1,239 @@
+/**
+ * The main.css styles
+ */
+
+body {
+    font-size: 12px;
+    margin: 0 auto;
+    background: #202849;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#question{
+  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+#app, #voorkeuren {
+display: flex;
+align-items: center;
+flex-direction: column;
+text-align: center;
+padding-top: 50px,;
+}
+
+span {
+font-size: 14px;
+}
+
+#points {
+  display: none;
+  font-size: 40px;
+  text-align: center;
+}
+
+.awnsers {
+  padding: 0;
+}
+
+.awnsers div div{
+  font-size: 20px;
+  width: 50%;
+  margin: 10px auto;
+  border: 1px solid #1b466a;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: left;
+  display: flex;
+}
+
+#submit, #refresBtn, #optionsbtn {
+  margin-top: 40px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background: #077fec;
+  cursor: pointer;
+  padding: 20px 40px;
+  font-size: 20px;
+  transition: 0.3s;
+  margin-bottom: 35px;
+}
+
+#submit:hover, #refresBtn:hover, #optionsbtn:hover {
+  background: #4a9fee;
+}
+
+.nav {
+position: absolute;
+top: 10px;
+left: 20px;
+
+}
+
+.nav a {
+  color: white;
+  font-size: 20px;
+  margin-right: 50px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #4a9fee;
+}
+
+#currentQuestion {
+  margin-top: 80px;
+}
+
+.awnsers div div input {
+  height: 20px;
+  width: 40px;
+}
+
+.awnsers div div input:hover {
+  color: red;
+}
+
+#timer {
+  display: none;
+}
+
+#myScoreHere {
+  text-align: center;
+  font-size: 55px;
+  margin: 0;
+  padding-top: 250px;
+}
+
+#error {
+  color: red;
+  display:none;
+  transition: 0.2s;
+}
+
+button {
+  cursor: pointer;
+}
+
+#diff {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  margin: 70px auto;
+  font-size: 20px;
+}
+
+#diff select:first-of-type {
+  margin: 15px 0px 50px 0px;
+}
+
+#diff select:last-of-type {
+  margin-top: 15px;
+}
+
+#false {
+  color: red;
+  margin-right: 20px;
+}
+
+#correct {
+  color: rgb(70, 189, 70);
+  margin-left: 20px;
+}
+
+#wrongTitle {
+font-size: 25px;
+margin-top: 50px;
+}
+
+.wrong {
+  margin-top: 80px;
+}
+
+.wrong:last-child {
+  padding-bottom: 100px;
+}
+
+.wrong h2 {
+  font-size: 20px;
+}
+
+.wrong p{
+  font-size: 14px;
+}
+
+@media screen and (max-width: 650px) {
+  .nav a {
+    font-size: 14px;
+    
+  }
+
+  .nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  #myScoreHere {
+    font-size: 40px;
+  }
+}
+
+footer {
+  background: black;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 3px;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+
+  #myScoreHere {
+    font-size: 30px;
+  }
+
+  .wrong {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px; 
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+
+  .wrong p {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #correct {
+    margin-top: 5px;
+    margin-left:0;
+  }
+}
+
+@media screen and (max-width: 380px) {
+
+  #myScoreHere {
+    font-size: 25px;
+  }
+
+  .nav a {
+    font-size: 13px;
+    
+  }
+}
+

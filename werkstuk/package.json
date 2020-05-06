@@ -1,0 +1,53 @@
+{
+  "name": "webpgm2-examen-werkstuk",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Web Programming 2 - Examen",
+  "scripts": {
+    "dev": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgmgent-1920-students/webpgm2-exam"
+  },
+  "bugs": {
+    "url": "https://github.com/pgmgent-1920-students/webpgm2-exam/issues"
+  },
+  "homepage": "https://github.com/pgmgent-1920-students/webpgm2-exam#readme",
+  "keywords": [
+    "Webpack",
+    "JS",
+    "Vanilla"
+  ],
+  "author": "Artevelde University College Ghent",
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/polyfill": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "babel-loader": "^8.0.6",
+    "chalk": "^2.4.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-loader": "^3.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "progress-bar-webpack-plugin": "^1.12.1",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1"
+  },
+  "dependencies": {
+    "navigo": "^7.1.2",
+    "nunjucks": "^3.2.1"
+  }
+}
